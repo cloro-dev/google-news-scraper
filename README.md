@@ -4,9 +4,9 @@
 
 [![cloro](https://img.shields.io/badge/Powered%20by-cloro-blue?style=for-the-badge)](https://cloro.dev/)
 
-The [Google News scraper](https://cloro.dev/google-news/) by cloro enables developers to programmatically interact with Google News and automatically collect news articles with structured metadata. Instead of manual data collection, you can retrieve news articles as parsed JSON, raw HTML, or other formats for seamless integration into your workflows.
+The [Google News scraper](https://cloro.dev/google-news/) by cloro lets developers programmatically interact with Google News and collect news articles with structured metadata. You can retrieve news articles as parsed JSON, raw HTML, or other formats for integration into your workflows.
 
-You can use cloro's Google News scraper for news monitoring, media tracking, content aggregation, and sentiment analysis. It handles dynamic content, supports real-time extraction, and eliminates the need to manage authentication, sessions, or anti-bot systems.
+You can use cloro's Google News scraper for news monitoring, media tracking, content aggregation, and sentiment analysis. It handles dynamic content, supports real-time extraction, and removes the need to manage authentication, sessions, or anti-bot systems.
 
 ## How it works
 
@@ -134,11 +134,11 @@ The Google News scraper API returns a structured JSON object containing news art
 
 ### Multi-page scraping
 
-Scrape multiple pages of news results in a single request using the `pages` parameter (up to 10 pages). This is particularly useful for comprehensive news monitoring and analysis.
+Scrape multiple pages of news results in a single request using the `pages` parameter (up to 10 pages). Useful for broad news monitoring and analysis.
 
 ### Country-specific news
 
-Get localized news results for different countries by specifying the `country` parameter (e.g., "US", "GB", "DE", "FR", "JP"). News content varies significantly by region.
+Get localized news results for different countries by specifying the `country` parameter (e.g., "US", "GB", "DE", "FR", "JP"). News content varies by region.
 
 ### Device-specific results
 
@@ -146,11 +146,11 @@ Choose between desktop and mobile news layouts using the `device` parameter. Mob
 
 ### Thumbnail extraction
 
-News articles include thumbnail images when available, perfect for building visually-rich news aggregation interfaces.
+News articles include thumbnail images when available, useful for building visually-rich news aggregation interfaces.
 
 ### Raw HTML access
 
-For advanced use cases, get the complete HTML by setting `include.html` to `true`. Returns an array of HTML file URLs.
+To get the full HTML, set `include.html` to `true`. Returns an array of HTML file URLs.
 
 ## Practical Google News scraper use cases
 
@@ -163,7 +163,7 @@ For advanced use cases, get the complete HTML by setting `include.html` to `true
 
 ## Why choose cloro?
 
-- **Simple integration:** Clean API design with comprehensive documentation and examples.
+- **Simple integration:** Clean API design with documentation and examples.
 - **Reliable performance:** >99% uptime and low latencies.
 - **No infrastructure hassle:** We handle rate limiting, proxies, and browser management.
 - **Flexible pricing:** Low-cost subscription model with transparent pricing.
@@ -177,12 +177,12 @@ Any website is legal to be scraped as long as the information is publicly access
 
 ### What makes cloro's Google News scraper unique?
 
-cloro's Google News endpoint provides reliable access to Google News with:
+cloro's Google News endpoint provides access to Google News with:
 
 - **Structured article extraction** with titles, snippets, sources, and dates
 - **Thumbnail image extraction** for visual news interfaces
-- **Multi-page scraping** to collect comprehensive news data
-- **Built-in anti-detection** to ensure consistent results
+- **Multi-page scraping** to collect news data across pages
+- **Built-in anti-detection** for consistent results
 
 ### What's the recommended timeout for requests?
 
@@ -196,7 +196,7 @@ Yes, you can specify country codes like `US`, `GB`, `DE`, `JP` and more to get l
 
 For detailed documentation, advanced features, and integration guides, visit:
 
-- **API documentation:** [docs.cloro.dev](https://docs.cloro.dev/)
+- **API documentation:** [cloro.dev/docs](https://cloro.dev/docs/)
 - **Google News scraper page:** [cloro.dev/google-news](https://cloro.dev/google-news/)
 
 ## Other available scrapers

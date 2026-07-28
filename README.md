@@ -1,12 +1,28 @@
-# Google News scraper
+# Google News Scraper API — Articles, Sources, Dates & Thumbnails
 
 [![Google News scraper by cloro](https://github.com/cloro-dev/google-news-scraper/blob/main/google-news-scraper-hero-image.png)](https://cloro.dev/google-news/?utm_source=github)
 
 [![cloro](https://img.shields.io/badge/Powered%20by-cloro-blue?style=for-the-badge)](https://cloro.dev/)
 
-The [Google News scraper](https://cloro.dev/google-news/) by cloro lets developers programmatically interact with Google News and collect news articles with structured metadata. You can retrieve news articles as parsed JSON, raw HTML, or other formats for integration into your workflows.
+Scrape Google News via API. Returns parsed JSON with **article titles**, snippets, **source publisher**, **publish dates**, thumbnail image URLs, and category/topic groupings. Python, cURL, and Node.js examples below.
 
-You can use cloro's Google News scraper for news monitoring, media tracking, content aggregation, and sentiment analysis. It handles dynamic content, supports real-time extraction, and removes the need to manage authentication, sessions, or anti-bot systems.
+Built for developers doing news monitoring, media/mention tracking, content aggregation, sentiment-analysis pipelines, and brand-safety research — without managing CAPTCHAs, rotating proxies, session state, or Google's anti-bot defenses.
+
+## Quick start
+
+1. Get an API key at [cloro.dev](https://cloro.dev/?utm_source=github&utm_medium=readme).
+2. Send a request:
+
+   ```bash
+   curl -X POST https://api.cloro.dev/v1/monitor/google/news \
+     -H "Authorization: Bearer YOUR_API_KEY" \
+     -H "Content-Type: application/json" \
+     -d '{"query": "openai gpt-5", "country": "US"}'
+   ```
+
+3. Parse the returned JSON — `result.articles[]` with `title`, `snippet`, `source`, `publishedAt`, `thumbnail`, `url`.
+
+Full examples in Python, cURL, and Node.js below.
 
 ## How it works
 
@@ -212,7 +228,7 @@ For detailed documentation, advanced features, and integration guides, visit:
 
 ## Contact us
 
-If you have questions or need support, reach out to us at [support@cloro.dev](mailto:support@cloro.dev).
+If you have questions or need support, join our community at [r/cloroapi](https://www.reddit.com/r/cloroapi/).
 
 ---
 

@@ -50,10 +50,10 @@ Node.js and async/webhook examples are in the [endpoint documentation](https://c
 | Parameter | Description | Default |
 | --- | --- | --- |
 | `query`\* | The news search query | – |
-| `country` | Country code, which selects the Google News edition | `US` |
-| `device` | `desktop` or `mobile` | `desktop` |
+| `country`\* | Country code, which selects the Google News edition. Required unless you send `gl` | – |
+| `device` | `desktop`, `mobile`, `ios` or `android` | `desktop` |
 | `pages` | Number of result pages to return | `1` |
-| `include.html` | Return a URL to the full HTML (expires after 24h) | `false` |
+| `include.html` | Return URLs to the full HTML, one per page (expire after 24h) | `false` |
 
 \* Required
 
@@ -67,7 +67,7 @@ Node.js and async/webhook examples are in the [endpoint documentation](https://c
       {
         "position": 1,
         "title": "Regulators open inquiry into AI search results",
-        "url": "https://example.com/news/ai-search-inquiry",
+        "link": "https://example.com/news/ai-search-inquiry",
         "source": "Example Times",
         "date": "2 hours ago",
         "snippet": "The inquiry will examine how AI answers attribute sources...",
@@ -78,8 +78,8 @@ Node.js and async/webhook examples are in the [endpoint documentation](https://c
 }
 ```
 
-1. **`newsResults`** — position, title, URL, source, date, snippet and thumbnail per article.
-2. **`html`** — a URL to the full rendered page when `include.html` is set, expiring after 24 hours.
+1. **`newsResults`** — position, title, link, source, date, snippet and thumbnail per article.
+2. **`html`** — an array of URLs to the full rendered pages, one per page, when `include.html` is set, expiring after 24 hours.
 
 The structure is deliberately flat. News has no AI Overview, no shopping block and no local pack, so there is nothing else to parse.
 
@@ -121,4 +121,4 @@ cloro returns publicly visible results. Article text itself stays with the publi
 
 ## Contact us
 
-Questions or support: [r/cloroapi](https://www.reddit.com/r/cloroapi/).
+Questions or support: [ask the docs AI assistant](https://cloro.dev/docs/?assistant).

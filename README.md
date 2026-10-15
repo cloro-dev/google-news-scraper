@@ -117,7 +117,7 @@ cloro returns publicly visible results. Article text itself stays with the publi
 
 ## Other cloro scrapers
 
-[AI Mode](https://cloro.dev/ai-mode/) · [AI Overview](https://cloro.dev/ai-overview/) · [ChatGPT](https://cloro.dev/chatgpt/) · [Copilot](https://cloro.dev/copilot/) · [Gemini](https://cloro.dev/gemini/) · [Google Search](https://cloro.dev/google-search/) · [Grok](https://cloro.dev/grok/) · [Perplexity](https://cloro.dev/perplexity/)
+[AI Mode](https://cloro.dev/ai-mode/) · [AI Overview](https://cloro.dev/ai-overview/) · [ChatGPT](https://cloro.dev/chatgpt/) · [Copilot](https://cloro.dev/copilot/) · [Gemini](https://cloro.dev/gemini/) · [Google Search](https://cloro.dev/google-search/) · [Perplexity](https://cloro.dev/perplexity/)
 
 ## Contact us
 

@@ -4,7 +4,7 @@
 
 [![cloro](https://img.shields.io/badge/Powered%20by-cloro-blue?style=for-the-badge)](https://cloro.dev/)
 
-The [Google News scraper](https://cloro.dev/google-news/?utm_source=github) by cloro returns Google News results as structured JSON: article titles, snippets, sources, publication dates and thumbnails.
+The [Google News scraper](https://cloro.dev/google-news/?utm_source=github) by cloro is an API that extracts Google News results at scale, as structured JSON: article titles, snippets, sources, publication dates and thumbnails. Send up to 500 queries in one [batch request](https://cloro.dev/docs/api-reference/endpoint/create-batch-tasks) and take the results on a webhook.
 
 ## How do you scrape Google News?
 
@@ -51,6 +51,7 @@ Node.js and async/webhook examples are in the [endpoint documentation](https://c
 | --- | --- | --- |
 | `query`\* | The news search query | – |
 | `country`\* | Country code, which selects the Google News edition. Required unless you send `gl` | – |
+| `hl` | Interface language, independent of the country (for example `de`) | - |
 | `device` | `desktop`, `mobile`, `ios` or `android` | `desktop` |
 | `pages` | Number of result pages to return | `1` |
 | `include.html` | Return URLs to the full HTML, one per page (expire after 24h) | `false` |
@@ -78,8 +79,8 @@ Node.js and async/webhook examples are in the [endpoint documentation](https://c
 }
 ```
 
-1. **`newsResults`** — position, title, link, source, date, snippet and thumbnail per article.
-2. **`html`** — an array of URLs to the full rendered pages, one per page, when `include.html` is set, expiring after 24 hours.
+1. **`newsResults`**: position, title, link, source, date, snippet and thumbnail per article.
+2. **`html`**: an array of URLs to the full rendered pages, one per page, when `include.html` is set, expiring after 24 hours.
 
 The structure is deliberately flat. News has no AI Overview, no shopping block and no local pack, so there is nothing else to parse.
 
@@ -87,10 +88,10 @@ Full field-level schemas are in the [endpoint reference](https://cloro.dev/docs/
 
 ## Use cases
 
-- **Media monitoring** — track coverage of a brand, product or competitor by query.
-- **Crisis detection** — poll a branded query on a short interval and alert on new sources.
-- **Source-mix analysis** — which publications Google News surfaces for a topic, and how that changes.
-- **Content research** — what has already been written before you commission a piece.
+- **Media monitoring**: track coverage of a brand, product or competitor by query.
+- **Crisis detection**: poll a branded query on a short interval and alert on new sources.
+- **Source-mix analysis**: which publications Google News surfaces for a topic, and how that changes.
+- **Content research**: what has already been written before you commission a piece.
 
 ## FAQ
 
